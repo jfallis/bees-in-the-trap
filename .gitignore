@@ -1,0 +1,7 @@
+/var/*
+/.php_cs.cache
+/.php_cs.cache
+/.phpunit.result.cache
+/.DS_Store
+/infection.log
+/vendor

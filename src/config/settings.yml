@@ -1,0 +1,18 @@
+queen:
+  name: Queen
+  lifespanPoints: 100
+  hitPoints: 8
+  totalCount: 1
+  nuke: true
+worker:
+  name: Worker
+  lifespanPoints: 75
+  hitPoints: 10
+  totalCount: 5
+  nuke: false
+drone:
+  name: Drone
+  lifespanPoints: 50
+  hitPoints: 12
+  totalCount: 8
+  nuke: false
