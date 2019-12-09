@@ -52,5 +52,6 @@ return PhpCsFixer\Config::create()
         'no_break_comment' => false,
         'blank_line_before_statement' => true,
         'ordered_imports' => ['sortAlgorithm' => 'length'],
+        'no_trailing_whitespace' => true,
     ])
     ->setFinder($finder);

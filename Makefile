@@ -15,7 +15,7 @@ coverage-html: vendor ## HTML code coverage
 	vendor/bin/phpunit --configuration=phpunit.xml.dist --coverage-html var/build/coverage-report
 
 cs: vendor ## Code fixer
-	php-cs-fixer fix ${PWD} -v
+	php-cs-fixer fix -v
 
 infection: vendor ## Infection testing
 	vendor/bin/infection --min-covered-msi=80 --min-msi=80

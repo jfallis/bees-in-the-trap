@@ -61,7 +61,15 @@ class BeeGameCommandTest extends TestCase
         $output = $commandTester->getDisplay();
 
         $this->assertStringContainsString('Joshua: Shall we play a game?', $output);
+
+        $this->assertStringContainsString('Bee Hive', $output);
+        $this->assertRegexp('/\* LifespanPoints: \d+/', $output);
+        $this->assertRegexp('/\* HitPoints: \d+/', $output);
+        $this->assertRegexp('/\* TotalCount: \d+/', $output);
+        $this->assertRegexp('/\* Nuke: (true|false)+/', $output);
+
         $this->assertRegexp('/\[ERROR\] You can never leave!/', $output);
+
         $this->assertRegexp('/\[OK\] Direct Hit\. You took \d+ hit points from a Drone bee/', $output);
         $this->assertRegexp('/\[OK\] It took you \[\d+\] turns to win!/', $output);
     }

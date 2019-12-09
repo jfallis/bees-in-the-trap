@@ -12,10 +12,15 @@ Play Bees In The Trap locally or through Docker.
 
 #### Steps
 
-Run this command to build and run the container.
+Run this command to build the container.
 
 ```
-$ docker build -t johnfallis/beegame:1.0 . 
+$ docker build -t johnfallis/beegame:1.0 .
+```
+
+You can then run this command to play the game.
+
+```
 $ docker run -it johnfallis/beegame:1.0
 ```
 

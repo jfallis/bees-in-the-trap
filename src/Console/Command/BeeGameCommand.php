@@ -30,14 +30,15 @@ class BeeGameCommand extends Command
 
         $game = new Game();
 
+        $io->newLine(5);
+        $io->section('Bee Hive');
         foreach ($game->getHive() as $bee) {
             $io->section('Name: ' . $bee->getName());
-            $io->text([
+            $io->listing([
                 'LifespanPoints: ' . $bee->getLifespanPoints(),
                 'HitPoints: ' . $bee->getHitPoints(),
                 'TotalCount: ' . $bee->getTotalCount(),
-                'isNuke: ' . $bee->isNuke() ? 'true' : 'false',
-                'getHits: ' . $bee->getHits(),
+                'Nuke: ' . ($bee->isNuke() ? 'true' : 'false'),
             ]);
         }
 
